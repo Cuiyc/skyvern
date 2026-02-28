@@ -1,0 +1,15 @@
+# 启用 Ollama
+ENABLE_OLLAMA=true
+LLM_KEY=OLLAMA
+
+# Ollama 服务地址（Docker 用户注意网络配置）
+OLLAMA_SERVER_URL=http://192.168.0.68:11434  # Mac/Windows
+
+# 模型名称（必须与 ollama list 一致）
+OLLAMA_MODEL=qwen3-vl:8b
+
+# ⭐ 关键：开启视觉支持
+OLLAMA_SUPPORTS_VISION=true
+
+# API Key（Ollama 不需要真实 key，填任意非空字符串）
+OLLAMA_API_KEY=ollama
